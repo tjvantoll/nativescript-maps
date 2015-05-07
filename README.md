@@ -35,7 +35,7 @@ If npm doesn't end up working for you, you can just copy and paste this repo's m
 
 To use the module you have to include a `xmlns:maps` attribute to include the maps namespace for use in your XML. Point the value of this attribute at the location you have the maps.ios.js file stored in your app.
 
-```
+```xml
 <Page xmlns:maps="app/node_modules/nativescript-maps/maps">
 	<maps:Map latitude="42.7" longitude="23.3" />
 </Page>
