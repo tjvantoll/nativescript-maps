@@ -39,7 +39,8 @@ properties.forEach(function( name ) {
 			return this._getValue( property );
 		},
 		set: function( value ) {
-			if ( parseInt( value ) > 0 ) {
+			var intValue = parseInt( value, 10 );
+			if ( intValue >= -180 && intValue <= 180 ) {
 				this._setValue( property, value );
 			}
 		}
